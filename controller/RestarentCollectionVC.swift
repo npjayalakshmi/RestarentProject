@@ -42,7 +42,6 @@ class RestarentCollectionVC: UIViewController,UICollectionViewDataSource,UIColle
 //        collectionView.collectionViewLayout.invalidateLayout()
 
 
-        // Do any additional setup after loading the view.
     }
     
     func getRestarents(){

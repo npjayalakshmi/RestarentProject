@@ -24,12 +24,18 @@ class WebViewVC: UIViewController,WKNavigationDelegate {
        if let url = URL(string: "https://www.bottlerocketstudios.com")
        {
         let request = URLRequest(url: url)
-        bottlerRocketWebView.load(request)
+        DispatchQueue.main.async {
+            self.bottlerRocketWebView.load(request)
+
+        }
         }
         
         
         self.bottlerRocketWebView.navigationDelegate = self
-        barButton()
+        DispatchQueue.main.async {
+            self.barButton()
+
+        }
 //        self.backButton?.isEnabled = self.bottlerRocketWebView.canGoBack
 //        self.forwardButton?.isEnabled = self.bottlerRocketWebView.canGoForward
 //        self.bottlerRocketWebView.addObserver(self, forKeyPath:#keyPath(WKWebView.canGoBack), options: .new, context: nil)

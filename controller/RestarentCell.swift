@@ -15,9 +15,6 @@ class RestarentCell: UICollectionViewCell {
     @IBOutlet weak var restarentName: UILabel!
     
     @IBOutlet weak var categoryType: UILabel!
-    //    func populate(with restarent:Restarents){
-////        restarentImage.image = restarent.(urlToImage)
-//    }
     
     
     
