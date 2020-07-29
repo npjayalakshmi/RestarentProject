@@ -82,7 +82,7 @@ class RestarentCollectionVC: UIViewController,UICollectionViewDataSource,UIColle
         guard  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "restarentCell", for: indexPath) as? RestarentCell else {return UICollectionViewCell()}
         let restarent = restarents[indexPath.item]
         
-        cell.restarentImage.contentMode = .scaleAspectFit
+        cell.restarentImage.contentMode = .scaleAspectFill
         let defaultLink = "\(restarent.backgroundImageURL)"
 //        let completeLink = defaultLink + restarent.backgroundImageURL
         DispatchQueue.main.async{
