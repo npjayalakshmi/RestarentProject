@@ -33,7 +33,8 @@ class WebViewVC: UIViewController,WKNavigationDelegate {
         
         self.bottlerRocketWebView.navigationDelegate = self
         DispatchQueue.main.async {
-            self.barButton()
+            
+        self.barButton()
 
         }
 //        self.backButton?.isEnabled = self.bottlerRocketWebView.canGoBack
