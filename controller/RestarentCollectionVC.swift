@@ -83,9 +83,9 @@ class RestarentCollectionVC: UIViewController,UICollectionViewDataSource,UIColle
         let restarent = restarents[indexPath.item]
         
         cell.restarentImage.contentMode = .scaleAspectFit
-        let defaultLink = " http://sandbox.bottlerocketapps.com"
-        let completeLink = defaultLink + restarent.backgroundImageURL
-        cell.restarentImage.downloadedfrom(link: completeLink)
+        let defaultLink = "\(restarent.backgroundImageURL)"
+//        let completeLink = defaultLink + restarent.backgroundImageURL
+        cell.restarentImage.downloadedfrom(link: defaultLink)
         cell.restarentName.text = restarent.name
         cell.categoryType.text = restarent.category
 //        cell.restarentImage.image = restarents[indexPath.row]
