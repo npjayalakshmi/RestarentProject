@@ -81,7 +81,6 @@ class RestarentCollectionVC: UIViewController,UICollectionViewDataSource,UIColle
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "restarentCell", for: indexPath) as? RestarentCell else {return UICollectionViewCell()}
         let restarent = restarents[indexPath.item]
-//        cell.restarentImage.image = restarents[indexPath.row]
         
         cell.restarentImage.contentMode = .scaleAspectFit
         let defaultLink = " http://sandbox.bottlerocketapps.com"
@@ -105,7 +104,6 @@ class RestarentCollectionVC: UIViewController,UICollectionViewDataSource,UIColle
     }
     
    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//    let restarents = restarents[indexPath.item]
         performSegue(withIdentifier: "restarentCollectionVcToLunchVC", sender: restarents[indexPath.row])
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
