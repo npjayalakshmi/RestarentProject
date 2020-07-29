@@ -85,7 +85,9 @@ class RestarentCollectionVC: UIViewController,UICollectionViewDataSource,UIColle
         cell.restarentImage.contentMode = .scaleAspectFit
         let defaultLink = "\(restarent.backgroundImageURL)"
 //        let completeLink = defaultLink + restarent.backgroundImageURL
+        DispatchQueue.main.async{
         cell.restarentImage.downloadedfrom(link: defaultLink)
+        }
         cell.restarentName.text = restarent.name
         cell.categoryType.text = restarent.category
 //        cell.restarentImage.image = restarents[indexPath.row]

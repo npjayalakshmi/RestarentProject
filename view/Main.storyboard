@@ -157,7 +157,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="272"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="PfF-xt-uAf">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PfF-xt-uAf">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="272"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPK-Ln-5aV">
@@ -289,7 +289,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="320" height="180"/>
         <image name="Lunch" width="24" height="24"/>
         <image name="internet" width="25" height="25"/>
         <image name="map" width="25" height="25"/>
